@@ -1,4 +1,13 @@
-package PACKAGE_NAME;
+public class MusicplayerOnWithCD implements Command {
+    MusicPlayer player;
 
-public class MusicplayerOnWithCD {
+    public MusicplayerOnWithCD(MusicPlayer player){
+        this.player = player;
+    }
+
+    @Override
+    public void execute() {
+        player.on();
+        player.cd();
+    }
 }

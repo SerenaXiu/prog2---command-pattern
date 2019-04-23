@@ -1,4 +1,12 @@
-package PACKAGE_NAME;
+public class MusicplayerOff implements Command {
+    MusicPlayer player;
 
-public class MusicplayerOff {
+    public MusicplayerOff(MusicPlayer player){
+        this.player = player;
+    }
+
+    @Override
+    public void execute() {
+        player.off();
+    }
 }
